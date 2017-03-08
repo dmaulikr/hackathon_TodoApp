@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F32AF3B1E7046690042AF3E /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F32AF3A1E7046690042AF3E /* background.png */; };
+		6F32AF3E1E7056E80042AF3E /* ChallengeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F32AF3D1E7056E80042AF3E /* ChallengeTableViewCell.m */; };
 		6F9D75F21E703E7500A2C1A3 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F9D75F11E703E7500A2C1A3 /* add.png */; };
 		6F9D75FA1E70416E00A2C1A3 /* PlusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9D75F91E70416E00A2C1A3 /* PlusViewController.m */; };
 		6F9D75FD1E7041A100A2C1A3 /* ChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9D75FC1E7041A100A2C1A3 /* ChallengeViewController.m */; };
@@ -20,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F32AF3A1E7046690042AF3E /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		6F32AF3C1E7056E80042AF3E /* ChallengeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengeTableViewCell.h; sourceTree = "<group>"; };
+		6F32AF3D1E7056E80042AF3E /* ChallengeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengeTableViewCell.m; sourceTree = "<group>"; };
 		6F9D75F11E703E7500A2C1A3 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		6F9D75F81E70416E00A2C1A3 /* PlusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlusViewController.h; sourceTree = "<group>"; };
 		6F9D75F91E70416E00A2C1A3 /* PlusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlusViewController.m; sourceTree = "<group>"; };
@@ -54,6 +59,7 @@
 		6F9D75F01E703E6200A2C1A3 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				6F32AF3A1E7046690042AF3E /* background.png */,
 				6F9D75F11E703E7500A2C1A3 /* add.png */,
 			);
 			name = img;
@@ -135,6 +141,8 @@
 				6FB0C93A1E700CE90058DCB9 /* Main.storyboard */,
 				6FB0C93D1E700CE90058DCB9 /* Info.plist */,
 				6FB0C92C1E700CE90058DCB9 /* Supporting Files */,
+				6F32AF3C1E7056E80042AF3E /* ChallengeTableViewCell.h */,
+				6F32AF3D1E7056E80042AF3E /* ChallengeTableViewCell.m */,
 			);
 			path = HoleIN;
 			sourceTree = "<group>";
@@ -207,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FB0C93C1E700CE90058DCB9 /* Main.storyboard in Resources */,
+				6F32AF3B1E7046690042AF3E /* background.png in Resources */,
 				6FB0C9391E700CE90058DCB9 /* Assets.xcassets in Resources */,
 				6F9D75F21E703E7500A2C1A3 /* add.png in Resources */,
 			);
@@ -220,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F9D76031E7041C100A2C1A3 /* FailViewController.m in Sources */,
+				6F32AF3E1E7056E80042AF3E /* ChallengeTableViewCell.m in Sources */,
 				6FB0C9341E700CE90058DCB9 /* MainViewController.m in Sources */,
 				6FB0C9311E700CE90058DCB9 /* AppDelegate.m in Sources */,
 				6F9D75FD1E7041A100A2C1A3 /* ChallengeViewController.m in Sources */,

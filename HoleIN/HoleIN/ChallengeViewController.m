@@ -7,8 +7,10 @@
 //
 
 #import "ChallengeViewController.h"
+#import "ChallengeTableViewCell.h"
 
 @interface ChallengeViewController ()
+<UITableViewDelegate,UITableViewDataSource>
 
 @end
 
@@ -16,22 +18,43 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return 10;
 }
-*/
+
+
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    ChallengeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ChallengeTableViewCell"];
+    
+    
+    if(cell == nil){
+        cell = [[ChallengeTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ChallengeTableViewCell"];
+        
+    }
+    cell.cellImg.image = [UIImage imageNamed:@"background"];
+    
+    
+    return cell;
+}
+
+
+
+
 
 @end
