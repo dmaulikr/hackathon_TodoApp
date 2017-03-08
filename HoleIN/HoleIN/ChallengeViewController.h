@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ChallengeViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 
 @end

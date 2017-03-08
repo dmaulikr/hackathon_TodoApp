@@ -1,14 +1,14 @@
 //
-//  ChallengeTableViewCell.m
+//  SuccessTableViewCell.m
 //  HoleIN
 //
 //  Created by HanYoungsoo on 2017. 3. 9..
 //  Copyright © 2017년 YoungsooHan. All rights reserved.
 //
 
-#import "ChallengeTableViewCell.h"
+#import "SuccessTableViewCell.h"
 
-@implementation ChallengeTableViewCell
+@implementation SuccessTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -20,11 +20,5 @@
 
     // Configure the view for the selected state
 }
-
-
-
-
-
-
 
 @end

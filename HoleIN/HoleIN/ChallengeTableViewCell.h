@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ChallengeTableViewCell : UITableViewCell
-
-
 @property (weak, nonatomic) IBOutlet UIImageView *cellImg;
+
+@property (weak, nonatomic) IBOutlet UILabel *chTitle;
+
+@property (weak, nonatomic) IBOutlet UILabel *dday;
+
 @end
