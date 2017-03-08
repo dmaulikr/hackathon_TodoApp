@@ -47,8 +47,21 @@
 		6F32AF921E70BAFA0042AF3E /* fail4.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F32AF8F1E70BAFA0042AF3E /* fail4.png */; };
 		6F32AF931E70BAFA0042AF3E /* fail5.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F32AF901E70BAFA0042AF3E /* fail5.png */; };
 		6F32AF941E70BAFA0042AF3E /* fail6.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F32AF911E70BAFA0042AF3E /* fail6.png */; };
+		6F32AF9A1E70C0F50042AF3E /* PlusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F32AF961E70C0F50042AF3E /* PlusViewController.m */; };
+		6F32AF9B1E70C0F50042AF3E /* ImgCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F32AF981E70C0F50042AF3E /* ImgCollectionViewCell.m */; };
+		6F32AFA91E70C2D30042AF3E /* BungeeJump.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F32AF9D1E70C2D30042AF3E /* BungeeJump.png */; };
+		6F32AFAA1E70C2D30042AF3E /* BungeeJumpBig.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F32AF9E1E70C2D30042AF3E /* BungeeJumpBig.png */; };
+		6F32AFAB1E70C2D30042AF3E /* Camping.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F32AF9F1E70C2D30042AF3E /* Camping.png */; };
+		6F32AFAC1E70C2D30042AF3E /* Flower.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F32AFA01E70C2D30042AF3E /* Flower.png */; };
+		6F32AFAD1E70C2D30042AF3E /* group@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F32AFA11E70C2D30042AF3E /* group@2x.png */; };
+		6F32AFAE1E70C2D30042AF3E /* groupCopy.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F32AFA21E70C2D30042AF3E /* groupCopy.png */; };
+		6F32AFAF1E70C2D30042AF3E /* LIne 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F32AFA31E70C2D30042AF3E /* LIne 1.png */; };
+		6F32AFB01E70C2D30042AF3E /* Line 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F32AFA41E70C2D30042AF3E /* Line 2.png */; };
+		6F32AFB11E70C2D30042AF3E /* noChallenge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F32AFA51E70C2D30042AF3E /* noChallenge@2x.png */; };
+		6F32AFB21E70C2D30042AF3E /* people@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F32AFA61E70C2D30042AF3E /* people@3x.png */; };
+		6F32AFB31E70C2D30042AF3E /* swim@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F32AFA71E70C2D30042AF3E /* swim@3x.png */; };
+		6F32AFB41E70C2D30042AF3E /* travel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F32AFA81E70C2D30042AF3E /* travel@3x.png */; };
 		6F9D75F21E703E7500A2C1A3 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F9D75F11E703E7500A2C1A3 /* add.png */; };
-		6F9D75FA1E70416E00A2C1A3 /* PlusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9D75F91E70416E00A2C1A3 /* PlusViewController.m */; };
 		6F9D75FD1E7041A100A2C1A3 /* ChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9D75FC1E7041A100A2C1A3 /* ChallengeViewController.m */; };
 		6F9D76001E7041B100A2C1A3 /* SuccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9D75FF1E7041B100A2C1A3 /* SuccessViewController.m */; };
 		6F9D76031E7041C100A2C1A3 /* FailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9D76021E7041C100A2C1A3 /* FailViewController.m */; };
@@ -104,9 +117,23 @@
 		6F32AF8F1E70BAFA0042AF3E /* fail4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fail4.png; sourceTree = "<group>"; };
 		6F32AF901E70BAFA0042AF3E /* fail5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fail5.png; sourceTree = "<group>"; };
 		6F32AF911E70BAFA0042AF3E /* fail6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fail6.png; sourceTree = "<group>"; };
+		6F32AF951E70C0F50042AF3E /* PlusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlusViewController.h; sourceTree = "<group>"; };
+		6F32AF961E70C0F50042AF3E /* PlusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlusViewController.m; sourceTree = "<group>"; };
+		6F32AF971E70C0F50042AF3E /* ImgCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgCollectionViewCell.h; sourceTree = "<group>"; };
+		6F32AF981E70C0F50042AF3E /* ImgCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgCollectionViewCell.m; sourceTree = "<group>"; };
+		6F32AF9D1E70C2D30042AF3E /* BungeeJump.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BungeeJump.png; sourceTree = "<group>"; };
+		6F32AF9E1E70C2D30042AF3E /* BungeeJumpBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BungeeJumpBig.png; sourceTree = "<group>"; };
+		6F32AF9F1E70C2D30042AF3E /* Camping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Camping.png; sourceTree = "<group>"; };
+		6F32AFA01E70C2D30042AF3E /* Flower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flower.png; sourceTree = "<group>"; };
+		6F32AFA11E70C2D30042AF3E /* group@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "group@2x.png"; sourceTree = "<group>"; };
+		6F32AFA21E70C2D30042AF3E /* groupCopy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = groupCopy.png; sourceTree = "<group>"; };
+		6F32AFA31E70C2D30042AF3E /* LIne 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LIne 1.png"; sourceTree = "<group>"; };
+		6F32AFA41E70C2D30042AF3E /* Line 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Line 2.png"; sourceTree = "<group>"; };
+		6F32AFA51E70C2D30042AF3E /* noChallenge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "noChallenge@2x.png"; sourceTree = "<group>"; };
+		6F32AFA61E70C2D30042AF3E /* people@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "people@3x.png"; sourceTree = "<group>"; };
+		6F32AFA71E70C2D30042AF3E /* swim@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swim@3x.png"; sourceTree = "<group>"; };
+		6F32AFA81E70C2D30042AF3E /* travel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "travel@3x.png"; sourceTree = "<group>"; };
 		6F9D75F11E703E7500A2C1A3 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
-		6F9D75F81E70416E00A2C1A3 /* PlusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlusViewController.h; sourceTree = "<group>"; };
-		6F9D75F91E70416E00A2C1A3 /* PlusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlusViewController.m; sourceTree = "<group>"; };
 		6F9D75FB1E7041A100A2C1A3 /* ChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengeViewController.h; sourceTree = "<group>"; };
 		6F9D75FC1E7041A100A2C1A3 /* ChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengeViewController.m; sourceTree = "<group>"; };
 		6F9D75FE1E7041B100A2C1A3 /* SuccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuccessViewController.h; sourceTree = "<group>"; };
@@ -155,6 +182,37 @@
 				6F32AF6F1E7096620042AF3E /* FailTableViewCell.m */,
 			);
 			name = CustomCell;
+			sourceTree = "<group>";
+		};
+		6F32AF991E70C0F50042AF3E /* PlusView */ = {
+			isa = PBXGroup;
+			children = (
+				6F32AF951E70C0F50042AF3E /* PlusViewController.h */,
+				6F32AF961E70C0F50042AF3E /* PlusViewController.m */,
+				6F32AF971E70C0F50042AF3E /* ImgCollectionViewCell.h */,
+				6F32AF981E70C0F50042AF3E /* ImgCollectionViewCell.m */,
+			);
+			name = PlusView;
+			path = "../../../../Downloads/버킷리스트/HoleIN";
+			sourceTree = "<group>";
+		};
+		6F32AF9C1E70C2C70042AF3E /* img */ = {
+			isa = PBXGroup;
+			children = (
+				6F32AF9D1E70C2D30042AF3E /* BungeeJump.png */,
+				6F32AF9E1E70C2D30042AF3E /* BungeeJumpBig.png */,
+				6F32AF9F1E70C2D30042AF3E /* Camping.png */,
+				6F32AFA01E70C2D30042AF3E /* Flower.png */,
+				6F32AFA11E70C2D30042AF3E /* group@2x.png */,
+				6F32AFA21E70C2D30042AF3E /* groupCopy.png */,
+				6F32AFA31E70C2D30042AF3E /* LIne 1.png */,
+				6F32AFA41E70C2D30042AF3E /* Line 2.png */,
+				6F32AFA51E70C2D30042AF3E /* noChallenge@2x.png */,
+				6F32AFA61E70C2D30042AF3E /* people@3x.png */,
+				6F32AFA71E70C2D30042AF3E /* swim@3x.png */,
+				6F32AFA81E70C2D30042AF3E /* travel@3x.png */,
+			);
+			name = img;
 			sourceTree = "<group>";
 		};
 		6F9D75F01E703E6200A2C1A3 /* img_hys */ = {
@@ -237,15 +295,6 @@
 			name = ChallengeView;
 			sourceTree = "<group>";
 		};
-		6F9D75F71E70415600A2C1A3 /* PlusView */ = {
-			isa = PBXGroup;
-			children = (
-				6F9D75F81E70416E00A2C1A3 /* PlusViewController.h */,
-				6F9D75F91E70416E00A2C1A3 /* PlusViewController.m */,
-			);
-			name = PlusView;
-			sourceTree = "<group>";
-		};
 		6FB0C9201E700CE90058DCB9 = {
 			isa = PBXGroup;
 			children = (
@@ -265,9 +314,10 @@
 		6FB0C92B1E700CE90058DCB9 /* HoleIN */ = {
 			isa = PBXGroup;
 			children = (
+				6F32AF9C1E70C2C70042AF3E /* img */,
+				6F32AF991E70C0F50042AF3E /* PlusView */,
 				6F32AF671E7092890042AF3E /* CustomCell */,
 				6F32AF661E7092770042AF3E /* TapBarView */,
-				6F9D75F71E70415600A2C1A3 /* PlusView */,
 				6F9D75F61E70414C00A2C1A3 /* ChallengeView */,
 				6F9D75F51E70413A00A2C1A3 /* SuccessView */,
 				6F9D75F31E70410F00A2C1A3 /* FailView */,
@@ -352,19 +402,25 @@
 			files = (
 				6F32AF8C1E70AEAC0042AF3E /* failCopy@2x.png in Resources */,
 				6F32AF931E70BAFA0042AF3E /* fail5.png in Resources */,
+				6F32AFAE1E70C2D30042AF3E /* groupCopy.png in Resources */,
 				6F32AF7A1E70A5300042AF3E /* challenge4.png in Resources */,
+				6F32AFAB1E70C2D30042AF3E /* Camping.png in Resources */,
+				6F32AFA91E70C2D30042AF3E /* BungeeJump.png in Resources */,
 				6F32AF761E70A5300042AF3E /* challenge0.png in Resources */,
 				6F32AF5A1E7089B80042AF3E /* icon_fail.png in Resources */,
 				6F32AF881E70AB0F0042AF3E /* complete4.png in Resources */,
+				6F32AFB31E70C2D30042AF3E /* swim@3x.png in Resources */,
 				6F32AF5B1E7089B80042AF3E /* icon_home_off.png in Resources */,
 				6F32AF791E70A5300042AF3E /* challenge3.png in Resources */,
 				6F32AF771E70A5300042AF3E /* challenge1.png in Resources */,
 				6F32AF5F1E7089B80042AF3E /* logo.png in Resources */,
 				6F32AF5D1E7089B80042AF3E /* icon_success_off.png in Resources */,
 				6F32AF651E708F1F0042AF3E /* logo@2x.png in Resources */,
+				6F32AFB11E70C2D30042AF3E /* noChallenge@2x.png in Resources */,
 				6F32AF941E70BAFA0042AF3E /* fail6.png in Resources */,
 				6F32AF431E7086270042AF3E /* home@2x.png in Resources */,
 				6F32AF471E7086F70042AF3E /* successCopy@2x.png in Resources */,
+				6F32AFB01E70C2D30042AF3E /* Line 2.png in Resources */,
 				6F32AF591E7089B80042AF3E /* icon_fail_off.png in Resources */,
 				6F32AF871E70AB0F0042AF3E /* complete3.png in Resources */,
 				6FB0C93C1E700CE90058DCB9 /* Main.storyboard in Resources */,
@@ -373,10 +429,15 @@
 				6F32AF451E7086BA0042AF3E /* challenge@2x.png in Resources */,
 				6F32AF3B1E7046690042AF3E /* background.png in Resources */,
 				6F32AF571E7089B80042AF3E /* icon_challenge_off.png in Resources */,
+				6F32AFAF1E70C2D30042AF3E /* LIne 1.png in Resources */,
 				6F32AF631E708BC40042AF3E /* success@2x.png in Resources */,
+				6F32AFAD1E70C2D30042AF3E /* group@2x.png in Resources */,
+				6F32AFAC1E70C2D30042AF3E /* Flower.png in Resources */,
 				6F32AF921E70BAFA0042AF3E /* fail4.png in Resources */,
 				6F32AF8E1E70AEDD0042AF3E /* homeCopy2.png in Resources */,
 				6F32AF851E70AB0F0042AF3E /* complete1.png in Resources */,
+				6F32AFB41E70C2D30042AF3E /* travel@3x.png in Resources */,
+				6F32AFB21E70C2D30042AF3E /* people@3x.png in Resources */,
 				6F32AF7F1E70A7BB0042AF3E /* fail2.png in Resources */,
 				6F32AF581E7089B80042AF3E /* icon_challenge.png in Resources */,
 				6F32AF861E70AB0F0042AF3E /* complete2.png in Resources */,
@@ -385,6 +446,7 @@
 				6F32AF7E1E70A7BB0042AF3E /* fail1.png in Resources */,
 				6F9D75F21E703E7500A2C1A3 /* add.png in Resources */,
 				6F32AF4B1E7088DB0042AF3E /* KakaoTalk_Photo_2017-03-09-03-45-35_13.png in Resources */,
+				6F32AFAA1E70C2D30042AF3E /* BungeeJumpBig.png in Resources */,
 				6F32AF5E1E7089B80042AF3E /* icon_success.png in Resources */,
 				6F32AF781E70A5300042AF3E /* challenge2.png in Resources */,
 				6F32AF611E708B5B0042AF3E /* fail@2x.png in Resources */,
@@ -404,11 +466,12 @@
 				6F32AF411E706A060042AF3E /* TapBarViewController.m in Sources */,
 				6F32AF3E1E7056E80042AF3E /* ChallengeTableViewCell.m in Sources */,
 				6F32AF6D1E7095EE0042AF3E /* SuccessTableViewCell.m in Sources */,
+				6F32AF9A1E70C0F50042AF3E /* PlusViewController.m in Sources */,
 				6FB0C9341E700CE90058DCB9 /* MainViewController.m in Sources */,
 				6FB0C9311E700CE90058DCB9 /* AppDelegate.m in Sources */,
 				6F9D75FD1E7041A100A2C1A3 /* ChallengeViewController.m in Sources */,
-				6F9D75FA1E70416E00A2C1A3 /* PlusViewController.m in Sources */,
 				6F9D76001E7041B100A2C1A3 /* SuccessViewController.m in Sources */,
+				6F32AF9B1E70C0F50042AF3E /* ImgCollectionViewCell.m in Sources */,
 				6FB0C92E1E700CE90058DCB9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
