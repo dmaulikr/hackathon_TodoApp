@@ -22,10 +22,10 @@
     [super viewDidLoad];
     
  
-    self.challengeArr = [[NSMutableArray alloc] initWithObjects:@"런던여행가기",@"앱스토어에 앱 등록하기",@"팀 프로젝트 완수",@"유럽축구 직관 여행",@"여자친구와 스페인 여행", nil];
+    self.challengeArr = [[NSMutableArray alloc] initWithObjects:@"나홀로 런던 여행가기",@"앱스토어에 앱 등록하기",@"팀 프로젝트 완수",@"유럽축구 직관 여행",@"여자친구와 스페인 여행", nil];
     
     
-    self.ddayArr = [[NSMutableArray alloc] initWithObjects:@"D-52",@"D-60",@"D-54",@"D-153",@"D-205", nil];
+    self.ddayArr = [[NSMutableArray alloc] initWithObjects:@"D-25",@"D-60",@"D-54",@"D-153",@"D-205", nil];
 
     self.imgs = [[NSMutableArray alloc] initWithObjects:@"challenge0",@"challenge1",@"challenge2",@"challenge3",@"challenge4", nil];
   
