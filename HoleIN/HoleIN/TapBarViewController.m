@@ -43,16 +43,16 @@
     
     
     
-    self.mainVC.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.width - self.naviBar.frame.size.height);
+    self.mainVC.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - self.naviBar.frame.size.height);
     
-    self.chaellengeVC.view.frame =  CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.width - self.naviBar.frame.size.height);
+    self.chaellengeVC.view.frame =  CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - self.naviBar.frame.size.height);
     
     
-    self.successVS.view.frame =  CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.width - self.naviBar.frame.size.height);
+    self.successVS.view.frame =  CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - self.naviBar.frame.size.height);
     
-    self.failVC.view.frame =  CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.width - self.naviBar.frame.size.height);
+    self.failVC.view.frame =  CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - self.naviBar.frame.size.height);
     
-    self.plusVC.view.frame =  CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.width - self.naviBar.frame.size.height);
+    self.plusVC.view.frame =  CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - self.naviBar.frame.size.height);
     
     
     [self addChildViewController:self.mainVC];
@@ -127,6 +127,7 @@
 
 - (IBAction)onFailBtn:(UIButton *)sender {
     [self.pan setEnabled:NO];
+    [self.scrollView setScrollEnabled:NO];
     [self.scrollView addSubview:self.failVC.view];
     
     [self.currView.view removeFromSuperview];
