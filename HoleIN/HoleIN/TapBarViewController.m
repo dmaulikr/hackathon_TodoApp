@@ -40,6 +40,7 @@
     self.successVS = [self.storyboard instantiateViewControllerWithIdentifier:@"SuccessViewController"];
     self.failVC = [self.storyboard instantiateViewControllerWithIdentifier:@"FailViewController"];
 //    self.plusVC = [self.storyboard instantiateViewControllerWithIdentifier:@"PlusViewController"];
+    NSLog(@"%lf", self.mainVC.titleLB.bounds.origin.y);
     
     
     
@@ -76,6 +77,13 @@
             
             [self.scrollView setContentOffset:CGPointMake(0, -self.naviBar.frame.size.height) animated:YES];
             NSLog(@"DW");
+            NSLog(@"%lf", self.mainVC.titleLB.bounds.origin.y);
+            
+            
+            
+            [UIView animateWithDuration:0.5 animations:^{
+                [self.mainVC.titleLB setFrame:CGRectMake(114.5, self.mainVC.titleLB.bounds.origin.y, self.mainVC.titleLB.frame.size.width, self.mainVC.titleLB.frame.size.height)];}];
+            
             
             
         }
@@ -84,11 +92,14 @@
             
             [self.scrollView setContentOffset:CGPointMake(0, 0) animated:YES];
             NSLog(@"UP");
+    
+
+            [UIView animateWithDuration:0.5 animations:^{
+                [self.mainVC.titleLB setFrame:CGRectMake(114.5, self.mainVC.titleLB.bounds.origin.y + 60, self.mainVC.titleLB.frame.size.width, self.mainVC.titleLB.frame.size.height)];}];
+            }
+            
         }
     }
-
-    
-}
 - (IBAction)onChallengeBtn:(UIButton *)sender {
     [self.scrollView addSubview:self.chaellengeVC.view];
     [self.pan setEnabled:NO];

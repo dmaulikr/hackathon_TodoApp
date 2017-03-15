@@ -16,4 +16,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *successBtn;
 @property (weak, nonatomic) IBOutlet UIButton *failBtn;
 
+
+
+
 @end

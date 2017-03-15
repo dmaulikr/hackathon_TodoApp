@@ -14,6 +14,9 @@
 @property NSMutableArray *challengeArr;
 @property NSMutableArray *ddayArr;
 @property NSMutableArray *imgs;
+
+
+
 @end
 
 @implementation ChallengeViewController
@@ -32,12 +35,6 @@
   
 
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-
-}
-
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
@@ -87,5 +84,32 @@
     
 }
 
+
+- (NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    
+    UITableViewRowAction *delect = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"Del" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
+        NSLog(@"DEL");
+    }];
+    
+    return @[delect];
+}
+
+//- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    
+//    return UITableViewCellEditingStyleDelete;
+//}
+//
+//- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+//    // you need to implement this method too or nothing will work:
+////    [tableView setRowHeight:120];
+//    
+//    NSLog(@"Delete Button tapped!!");
+//    
+//}
+//- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    return YES; //tableview must be editable or nothing will work...
+//}
 
 @end
