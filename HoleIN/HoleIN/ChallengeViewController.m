@@ -78,7 +78,11 @@
         
     }];
     
+    UIAlertAction *no = [UIAlertAction actionWithTitle:@"아니오" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+    }];
+    
     [challegeAlert addAction:yes];
+    [challegeAlert addAction:no];
 
     [self presentViewController:challegeAlert animated:YES completion:nil];
     
@@ -89,27 +93,27 @@
     
     
     UITableViewRowAction *delect = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"Del" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
-        NSLog(@"DEL");
+        UIAlertController *challegeAlert = [UIAlertController alertControllerWithTitle:@"삭제" message:@"삭제할까요?" preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *yes = [UIAlertAction actionWithTitle:@"확인" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [self.challengeArr removeObjectAtIndex:indexPath.row];
+            [self.imgs removeObjectAtIndex:indexPath.row];
+            [self.ddayArr removeObjectAtIndex:indexPath.row];
+            [self.tableView reloadData];
+            
+        }];
+        
+        UIAlertAction *no = [UIAlertAction actionWithTitle:@"아니오" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        }];
+    
+        
+        [challegeAlert addAction:yes];
+        [challegeAlert addAction:no];
+        
+        [self presentViewController:challegeAlert animated:YES completion:nil];
+
     }];
     
     return @[delect];
 }
-
-//- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    
-//    return UITableViewCellEditingStyleDelete;
-//}
-//
-//- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-//    // you need to implement this method too or nothing will work:
-////    [tableView setRowHeight:120];
-//    
-//    NSLog(@"Delete Button tapped!!");
-//    
-//}
-//- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    return YES; //tableview must be editable or nothing will work...
-//}
-
 @end
