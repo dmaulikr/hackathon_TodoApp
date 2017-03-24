@@ -62,30 +62,43 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+}
+- (NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    [tableView deselectRowAtIndexPath:indexPath
-                             animated:NO];
+    UITableViewRowAction *retry = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"Retry" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
+        UIAlertController *retryAlert = [UIAlertController alertControllerWithTitle:@"재도전" message:@"D-Day 날짜를 설정해주세요" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *yes = [UIAlertAction actionWithTitle:@"확인" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [self.challengeArr removeObjectAtIndex:indexPath.row];
+            [self.imgs removeObjectAtIndex:indexPath.row];
+            [self.tableView reloadData];
+            NSLog(@"11zzz%@", retryAlert.textFields[0].text);
+        }];
+        UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"취소" style:UIAlertActionStyleCancel handler:nil];
+        [retryAlert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+            textField.placeholder = @"D-Day날짜를 입력하세요!";
+            textField.textColor = [UIColor blueColor];
+            textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+        }];
+        [retryAlert addAction:yes];
+        [retryAlert addAction:cancel];
+        [self presentViewController:retryAlert animated:YES completion:nil];
+    }];
+    [retry setBackgroundColor:[UIColor blueColor]];
     
-    UIAlertController *failAlert = [UIAlertController alertControllerWithTitle:@"실패" message:@"재도전 선택시 도전목록에 다시 추가됩니다." preferredStyle:UIAlertControllerStyleAlert];
-    
-    UIAlertAction *reTry = [UIAlertAction actionWithTitle:@"다시도전" style:UIAlertActionStyleDefault handler:nil];
-    
-    UIAlertAction *goTrash = [UIAlertAction actionWithTitle:@"버리기" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [self.challengeArr removeObjectAtIndex:indexPath.row];
-        [self.imgs removeObjectAtIndex:indexPath.row];
-
-        [self.tableView reloadData];
+    UITableViewRowAction *rowdelete = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"Del" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
+        UIAlertController *challegeAlert = [UIAlertController alertControllerWithTitle:@"삭제" message:@"삭제할까요?" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *yes = [UIAlertAction actionWithTitle:@"확인" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [self.challengeArr removeObjectAtIndex:indexPath.row];
+            [self.imgs removeObjectAtIndex:indexPath.row];
+            [self.tableView reloadData];
+        }];
+        UIAlertAction *no = [UIAlertAction actionWithTitle:@"아니오" style:UIAlertActionStyleCancel handler:nil];
+        [challegeAlert addAction:yes];
+        [challegeAlert addAction:no];
+        [self presentViewController:challegeAlert animated:YES completion:nil];
         
     }];
-    
-    [failAlert addAction:reTry];
-    [failAlert addAction:goTrash];
-    
-    [self presentViewController:failAlert animated:YES completion:nil];
-
+    return @[rowdelete,retry];
 }
-
-
-
-
 @end
