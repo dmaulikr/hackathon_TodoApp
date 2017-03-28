@@ -1,3 +1,7 @@
 해커톤 5조 Git-Hub
 ----
 밤샘 디자인 / 코딩 화이팅!
+
+PPT
+----
+[버킷리스트 앱 소개 PPT](https://github.com/heyman333/hackathon_TodoApp/blob/master/final%20ppt_resize.pdf)
