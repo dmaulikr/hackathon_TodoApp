@@ -44,11 +44,9 @@
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
-
-    
 }
+
 - (NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     UITableViewRowAction *rowdelete = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"Del" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
