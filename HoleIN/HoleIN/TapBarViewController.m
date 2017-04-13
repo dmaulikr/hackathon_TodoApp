@@ -31,6 +31,8 @@
 // MARK: - App LifeCycle
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.view layoutIfNeeded];
+    
     [self.homeBtn setSelected:YES];
     [self.scrollView setContentOffset:CGPointMake(0, -self.naviBar.frame.size.height)];
     self.mainVC = [self.storyboard instantiateViewControllerWithIdentifier:@"MainViewController"];
@@ -44,23 +46,20 @@
     [self.scrollView addSubview:self.mainVC.view];
     self.currView = self.mainVC;
     
-    [self.view addGestureRecognizer:_pan];
-    
-}
-- (void)viewDidLayoutSubviews{
-    [super viewDidLayoutSubviews];
-    NSLog(@"viewdidlayoutsubView");
     self.mainVC.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - self.naviBar.frame.size.height);
     self.chaellengeVC.view.frame =  CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - self.naviBar.frame.size.height);
     self.successVS.view.frame =  CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - self.naviBar.frame.size.height);
     self.failVC.view.frame =  CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - self.naviBar.frame.size.height);
     self.plusVC.view.frame =  CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - self.naviBar.frame.size.height);
-}
--(void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
+    [self.view layoutIfNeeded];
+    
     self.logoLBx = self.mainVC.titleLB.frame.origin.x;
     self.logoLBy = self.mainVC.titleLB.frame.origin.y;
-    NSLog(@"%f %f", _logoLBx , _logoLBy);
+    NSLog(@"0 %f %f", _logoLBx , _logoLBy);
+    
+    [self.view addGestureRecognizer:_pan];
+    
+    
 }
 
 // MARK: - Gesture event
@@ -73,17 +72,19 @@
         
         if (velocity.y >0)   // panning down
         {
+            NSLog(@"1 %f %f", _logoLBx , _logoLBy);
             [self.scrollView setContentOffset:CGPointMake(0, -self.naviBar.frame.size.height) animated:YES];
             [UIView animateWithDuration:0.5 animations:^{
                 [self.mainVC.titleLB setFrame:CGRectMake(self.logoLBx, self.logoLBy, self.mainVC.titleLB.frame.size.width, self.mainVC.titleLB.frame.size.height)];}];
-            NSLog(@"%f %f", _logoLBx , _logoLBy);
+            
         }else                // panning up
         {
+            NSLog(@"2 %f %f", _logoLBx , _logoLBy);
             [self.scrollView setContentOffset:CGPointMake(0, 0) animated:YES];
             NSLog(@"UP");
             [UIView animateWithDuration:0.5 animations:^{
-                [self.mainVC.titleLB setFrame:CGRectMake(self.logoLBx, self.mainVC.titleLB.bounds.origin.y + self.naviBar.frame.size.height, self.mainVC.titleLB.frame.size.width, self.mainVC.titleLB.frame.size.height)];}];
-            NSLog(@"%f %f", _logoLBx , _logoLBy);
+                [self.mainVC.titleLB setFrame:CGRectMake(self.logoLBx, self.mainVC.titleLB.bounds.origin.y-10 + self.naviBar.frame.size.height, self.mainVC.titleLB.frame.size.width, self.mainVC.titleLB.frame.size.height)];}];
+            
             }
         }
     }

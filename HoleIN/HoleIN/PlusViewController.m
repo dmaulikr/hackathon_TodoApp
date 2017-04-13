@@ -32,13 +32,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-//    [self.imgTextView addObserver:self forKeyPath:@"contentSize" options:NSKeyValueObservingOptionNew context:nil];
+    //    [self.imgTextView addObserver:self forKeyPath:@"contentSize" options:NSKeyValueObservingOptionNew context:nil];
     
-//    // Cancel 버튼과 Save 버튼
-//    [self.exitButton addTarget:self action:@selector(returnHome:) forControlEvents:UIControlEventTouchUpInside];
+    //    // Cancel 버튼과 Save 버튼
+    //    [self.exitButton addTarget:self action:@selector(returnHome:) forControlEvents:UIControlEventTouchUpInside];
     
     // 저장 버튼 모양과 기능
-//    [self.saveButton addTarget:self action:@selector(saveData:) forControlEvents:UIControlEventTouchUpInside];
+    //    [self.saveButton addTarget:self action:@selector(saveData:) forControlEvents:UIControlEventTouchUpInside];
     [self.saveButton.layer setBorderWidth:1.0];
     [self.saveButton.layer setBorderColor:[UIColor colorWithRed:155.0/255 green:155.0/255 blue:155.0/255 alpha:1.0].CGColor];
     [self.saveButton.layer setCornerRadius:4.0];
@@ -88,7 +88,7 @@
 
 
 //- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
-//    
+//
 //    if ([keyPath isEqualToString:@"contentSize"]) {
 //        UITextView *tv = object;
 //        CGFloat topCorrect = ([tv bounds].size.height - [tv contentSize].height * [tv zoomScale])  / 2.0;
@@ -161,7 +161,7 @@
         default:{
             
             ImgCollectionViewCell *cell = (ImgCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
-//            UIImage *image = [[UIImage alloc] init];
+            //            UIImage *image = [[UIImage alloc] init];
             [self.imgView setImage:cell.cellImgView.image];
         }
             
@@ -186,8 +186,11 @@
 }
 
 - (IBAction)onBackBtn:(UIButton *)sender {
-//    MainViewController *mainVC = [self.storyboard instantiateViewControllerWithIdentifier:@"MainViewController"];
+    //    MainViewController *mainVC = [self.storyboard instantiateViewControllerWithIdentifier:@"MainViewController"];
     
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+- (IBAction)onSavaBtn:(UIButton *)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
