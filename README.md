@@ -8,4 +8,4 @@ PPT
 
 PreView
 ----
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4PSoKal8OO8" frameborder="0" allowfullscreen></iframe>
+https://www.youtube.com/embed/4PSoKal8OO8
